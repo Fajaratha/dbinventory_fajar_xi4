@@ -8,7 +8,8 @@ $stok= $_POST['stok'];
 
 include '../../config/koneksi.php';
 
-$query = mysqli_query($conn,"INSERT INTO barang VALUES('$id_barang','$id_jenis','$namna_barang','$harga','$stok')");
+$query = mysqli_query($conn,"INSERT INTO barang
+ VALUES('$id_barang','$id_jenis','$namna_barang','$harga','$stok')");
 
 if($query){
     echo "<script>alert('Tambah berhasil')</script>";

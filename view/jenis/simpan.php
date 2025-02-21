@@ -5,7 +5,8 @@ $nama_jenis= $_POST['nama_jenis'];
 
 include '../../config/koneksi.php';
 
-$query = mysqli_query($conn,"INSERT INTO jenis VALUES('$id_jenis','$namna_jenis')");
+$query = mysqli_query($conn,"INSERT INTO jenis
+ VALUES('$id_jenis','$namna_jenis')");
 
 if($query){
     echo "<script>alert('Tambah berhasil')</script>";
